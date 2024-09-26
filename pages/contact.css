@@ -1,0 +1,204 @@
+.contact-page-sec {
+  padding: 60px 0;
+  min-height: 100vh;
+  opacity: 1;
+  
+}
+
+
+
+
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+.clearfixbtn{
+	margin-top: 10px;
+	justify-items: center;
+}
+
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+	outline: none;
+	
+}
+::-moz-placeholder {
+	color: #666;
+	font-weight: 300;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #666;
+	font-weight: 300;
+}
+
+
+/* Contact Form Styling */
+.container {
+	padding: 0 50px 70px;
+}
+.map-container {
+	width: 100%;
+	max-width: 100%;
+	height: 600px; /* Fixed height */
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+/* Ensure iframe fills the container */
+.map-container iframe {
+	width: 100%;
+	height: 600px; /* Make sure iframe height matches container */
+	border: 0;
+}
+
+.textcenter {
+	text-align: center;
+}
+
+
+.section1 h1 {
+	font-size: 40px;
+	color: #FBB315;
+	font-weight: normal;
+}
+
+.section2 {
+    width: 1200px;
+    margin: 25px auto;
+}
+.section2 .col2 {
+	width: 48.71%;
+}
+.section2 .col2.first {
+	float: left;
+}
+.section2 .col2.last {
+	float: right;
+}
+.section2 .col2.column2 {
+	padding: 0 30px;
+}
+.section2 span.collig {
+	color: #a2a2a2;
+	margin-right: 10px;
+	display: inline-block;
+}
+.section2 .sec2addr {
+	display: block;
+	line-height: 26px;
+}
+.section2 .sec2addr p:first-child {
+	margin-bottom: 10px;
+}
+.section2 .sec2contactform input[type="text"], 
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+    padding: 18px;
+    border: 0;
+    background: #EDEDED;
+    margin: 7px 0;
+	border-radius: 10px;
+
+}
+.section2 .sec2contactform textarea {
+	width: 100%;
+	display: block;
+	color: #666;
+  resize:none;
+}
+.section2 .sec2contactform input[type="submit"] {
+	padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #FBB315;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.section2 .sec2contactform h3 {
+	font-weight: normal;
+    margin: 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 19px;
+    color: #FBB315;
+}
+
+/* @media querries */
+
+@media only screen and (max-width: 1266px) {
+	.section2 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.container {
+		padding: 0 30px 70px;
+	}
+	.section2 .col2 {
+		width: 100%;
+		display: block;
+	}
+	.section2 .col2.first {
+		margin-bottom: 10px;
+	}
+	.section2 .col2.column2 {
+		padding: 0;
+	}
+	body .sec2map {
+		height: 250px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section2 .sec2addr {
+		font-size: 14px;
+	}
+	.section2 .sec2contactform h3 {
+		font-size: 16px;
+	}
+	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+		padding: 10px;
+		margin:3px 0;
+	}
+	.section2 .sec2contactform input[type="submit"] {
+		padding: 10px 30px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.section1 h1 {
+		font-size: 28px;
+	}	
+}
+
+.section2 .sec2contactform select {
+    padding: 18px; /* Same padding as input fields */
+    border: 0; /* No border */
+    background: #EDEDED; /* Same background color */
+    margin: 7px 0; /* Same margin */
+    border-radius: 10px; /* Same border radius */
+    /* width: 100%; Full width */
+    color: #666; /* Text color */
+    appearance: none; /* Remove default arrow */
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari */
+}
+
+/* Optional: Add a custom arrow */
+.section2 .sec2contactform {
+    position: relative; /* To position the arrow */
+}
+
+.section2 .sec2contactform select::after {
+    content: '▼'; /* Custom arrow */
+    position: absolute;
+    right: 10px; /* Position the arrow */
+    top: 50%; /* Center the arrow */
+    transform: translateY(-50%);
+    pointer-events: none; /* Allow clicks to pass through */
+}
